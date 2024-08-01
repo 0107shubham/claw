@@ -1,5 +1,5 @@
 import express from "express";
-// import route from "../Route/routes.js"; // Updated import statement
+import route from "../Route/routes.js"; // Updated import statement
 const app = express();
 import cors from "cors";
 
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 //   console.log(user, "username");
 // });
 
-// app.use("/", route);
+app.use("/", route);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
