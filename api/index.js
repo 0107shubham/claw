@@ -12,9 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send("Hello, World for shbham!");
 });
-// app.get("/status", (req, res) => {
-//   res.send("Hello, World for status!");
-// });
+app.get("/status", (req, res) => {
+  res.send("Hello, World for status!");
+});
 // app.get("/status:name", (req, res) => {
 //   const { name } = req.params;
 
