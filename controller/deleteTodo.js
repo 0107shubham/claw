@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 
 export const deleteTodo = async (req, res) => {
   const { id } = req.params; // Get the id of the TODO to delete from the request parameters
-  console.log("delete");
+  console.log("delete", id);
 
   try {
     // Delete the TODO by its id
