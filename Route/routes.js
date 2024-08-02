@@ -7,6 +7,7 @@ import { signin } from "../controller/signin.js";
 import { createTodo } from "../controller/createTodo.js";
 import { getTodo } from "../controller/getTodo.js";
 import { updateTodo } from "../controller/updateTodo.js";
+import { deleteTodo } from "../controller/deleteTodo.js";
 
 // User routes
 route.post("/signup", signup);
@@ -16,5 +17,6 @@ route.post("/signin", signin);
 route.post("/todos", createTodo); // Create a new todo
 route.get("/todos/:id", getTodo); // Get a todo by ID
 route.put("/todos/:id", updateTodo); // Update a todo by ID
+route.delete("/todos/:id", deleteTodo); // Delete a todo by ID
 
 export default route;
